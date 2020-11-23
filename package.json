@@ -1,0 +1,27 @@
+{
+  "name": "nancytochi.com",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss styles/tailwind.css -o public/build/tailwind.css",
+    "watch": "postcss styles/tailwind.css -o public/build/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntochi/nancytochi.com.git"
+  },
+  "author": "Nancy Tochi O",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ntochi/nancytochi.com/issues"
+  },
+  "homepage": "nancytochi.com",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "autoprefixer": "^10.0.2",
+    "postcss": "^8.0.3",
+    "postcss-cli": "^7.1.2",
+    "tailwindcss": "^1.8.10"
+  }
+}
