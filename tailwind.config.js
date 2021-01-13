@@ -18,6 +18,10 @@ module.exports = {
         'ming': '#006D77'
       },
 
+      spacing: {
+        128: '32rem',
+      },
+
     },
   },
 
@@ -25,5 +29,7 @@ module.exports = {
     extend: {},
   },
 
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow')
+  ],
 }
