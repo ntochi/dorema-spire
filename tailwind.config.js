@@ -15,7 +15,9 @@ module.exports = {
         'alicia': '#EDF6F9',
         'silk': '#FFDDD2',
         'middle-green': '#83C5BE',
-        'ming': '#006D77'
+        'middle-green-lite': '#D8EFEF',
+        'ming': '#006D77',
+        'borange': '#964D37'
       },
 
       spacing: {
