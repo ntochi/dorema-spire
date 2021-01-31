@@ -14,6 +14,7 @@ module.exports = {
       colors: {
         'alicia': '#EDF6F9',
         'silk': '#FFDDD2',
+        'silk-dark': '#fcc3b1',
         'middle-green': '#83C5BE',
         'middle-green-lite': '#D8EFEF',
         'ming': '#006D77',

@@ -16,7 +16,12 @@
 			.grid-indigo {
 				background-image: radial-gradient(#83C5BE 2px, transparent 2px);
 				background-size: 16px 16px;
-			}
+            }
+            
+            .wavy-line {
+                text-decoration: underline wavy #fcc3b1;
+            }
+
         </style>
     </head>
 
@@ -30,7 +35,7 @@
                             <div class="flex justify-between items-center">
                                 <div class="text-xl font-semibold">
                                     <a class="text-white dark:text-white text-xl font-bold md:text-2xl dark:hover:text-gray-300" href="#">
-                                        Dorema Spire Logo
+                                        <img src="" alt=""> Dorema Spire Logo
                                     </a>
                                 </div>
 
@@ -46,9 +51,9 @@
 
                             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
                             <div class="hidden p-4 md:flex md:items-center text-lg text-white font-semibold">
-                                <a href="#" class="block mx-4 mt-2 md:mt-0 dark:text-gray-200 capitalize dark:hover:text-indigo-400">Work</a>
-                                <a href="#" class="block mx-4 mt-2 md:mt-0 dark:text-gray-200 capitalize dark:hover:text-indigo-400">About</a>
-                                <a href="#" class="block mx-4 mt-2 md:mt-0 dark:text-gray-200 capitalize dark:hover:text-indigo-400">Contact</a>
+                                <a href="#work" class="block mx-4 mt-2 md:mt-0 capitalize hover:underline">Work</a>
+                                <a href="#about" class="block mx-4 mt-2 md:mt-0 capitalize hover:underline">About</a>
+                                <a href="#contact" class="block mx-4 mt-2 md:mt-0 capitalize hover:underline">Contact</a>
                             </div>
                         </div>
                     </div>
@@ -57,11 +62,10 @@
                 <div class="h-screen w-full bg-cover bg-center" style="background-image: url(https://images.unsplash.com/photo-1585399000684-d2f72660f092?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80);">
                     <div class="flex items-center justify-start px-20 h-full w-full bg-gray-800 bg-opacity-50">
                         <div>
-
                             <h1 class="text-white font-medium text-shadow-xl font-mono animate-pulse tracking-tighter"> 
                                 <span class="text-5xl lg:text-8xl">be where</span> 
                                 <br> 
-                                <span class="text-5xl lg:text-8xl">the world is going</span>  
+                                <span class="text-5xl lg:text-8xl">the world is going.</span>  
                             </h1> 
 
                             <button class="px-4 md:px-8 py-2 md:py-3 my-3 md:m-2 text-base md:text-xl text-white bg-transparent border border-solid border-white hover:bg-gray-900 hover:text-white font-bold capitalize rounded outline-none focus:outline-none" type="button">
@@ -75,7 +79,7 @@
 
             <!-- What We Offer Starts Here -->
             <section class="bg-white">
-                <h1 class="pt-10 font-extrabold text-3xl md:text-5xl text-center text-gray-800 tracking-tighter">What We Offer</h1>
+                <h1 class="pt-10 font-extrabold text-4xl md:text-5xl text-center text-gray-800 tracking-tighter">What We Offer</h1>
 
                 <div class="container mx-auto px-8 py-8 md:px-20 md:py-12">
                     <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-lg">
@@ -106,7 +110,6 @@
                         
                         <!-- Website Solutions -->
                         <div class="px-6">
-                            <!-- todo: change svg colors -->
                             <svg class="h-8 w-8" viewBox="0 0 30 30" fill="none">
                                 <path d="M29.6931 14.2283L22.7556 6.87823C22.3292 6.426 21.6175 6.40538 21.1652 6.83212C20.7137 7.25851 20.6927 7.9706 21.1195 8.42248L27.3284 15L21.1195 21.5783C20.6927 22.0302 20.7137 22.7419 21.1652 23.1687C21.3827 23.3738 21.6606 23.4754 21.9374 23.4754C22.2363 23.4754 22.5348 23.3569 22.7557 23.1233L29.6932 15.7729C30.1022 15.339 30.1023 14.6618 29.6931 14.2283Z" fill="#2D3748"/><path d="M8.88087 21.578L2.67236 15L8.88087 8.42215C9.30726 7.97028 9.28664 7.25812 8.83476 6.83179C8.38323 6.4054 7.67073 6.42603 7.2444 6.87791L0.306858 14.2279C-0.102245 14.6614 -0.102245 15.3391 0.306858 15.7726L7.24475 23.123C7.466 23.3574 7.76413 23.4755 8.06302 23.4755C8.33976 23.4755 8.61767 23.3735 8.83476 23.1684C9.28705 22.742 9.30726 22.0299 8.88087 21.578Z" fill="#2D3748"/><path d="M16.8201 3.08774C16.2062 2.99476 15.6317 3.41622 15.5379 4.03011L12.2379 25.6302C12.1441 26.2445 12.566 26.8186 13.1803 26.9124C13.238 26.921 13.295 26.9252 13.3516 26.9252C13.898 26.9252 14.3773 26.5266 14.4624 25.97L17.7624 4.3699C17.8562 3.7556 17.4343 3.1815 16.8201 3.08774Z" fill="#83C5BE"/>
                             </svg>
@@ -139,16 +142,16 @@
                                 Digital Marketing
                             </h1>
                             
-                            <p class="mt-2 dark:text-gray-400 text-justify">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim fusce tortor, ac sed malesuada blandit. Et mi gravida sem feugiat.
+                            <p class="mt-2 text-justify">
+                                We craft customized marketing strategies that gives you an unfair advantage over your competition.
                             </p>
 
-                            <p class="mt-2 dark:text-gray-400 text-justify">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, reiciendis! Rem dicta animi minus suscipit iusto expedita quaerat totam eum! 
+                            <p class="mt-2 text-justify">
+                                Our process involves a full evaluation of your market so your marketing dollar is spent to reach the people who truly matter to your business. We integrate a vast range of online marketing tools to build your business traffic.
                             </p> 
                             
-                            <p class="mt-2 dark:text-gray-400 text-justify">
-                                Libero voluptas nemo modi voluptatum voluptatibus laboriosam quibusdam nostrum asperiores
+                            <p class="mt-2 text-justify">
+                                Your business is unique and has distinct goals, we'll give it the <span class="italics font-semibold">exposure</span> it needs to thrive.
                             </p>
                         </div>
                     </div>
@@ -157,7 +160,7 @@
             <!-- What We Offer Ends Here -->
 
             <!-- Work Starts Here-->
-            <section class="py-8 px-4 text-justify bg-gray-300">
+            <section id="work" class="py-8 px-4 text-justify bg-gray-300">
                 <h1 class="py-6 md:py-16 font-extrabold text-4xl md:text-5xl text-center text-gray-900 tracking-tighter">Recent Work</h1>
 
                 <!-- * AATC -->
@@ -267,7 +270,7 @@
             <!-- Testimonials Starts Here-->
             <section class="mx-auto flex flex-col lg:flex-row shadow-md overflow-hidden" x-data="{ testimonialActive: 2 }" x-cloak>
 
-                <div class="w-full py-12 lg:py-24 lg:w-1/2 flex flex-col item-center justify-center bg-ming">
+                <div class="relative w-full py-12 lg:py-24 lg:w-1/2 flex flex-col item-center justify-center bg-ming">
 
                     <!-- What Our Clients Are Saying -->
                     <div class="text-4xl md:text-6xl md:p-6 mx-auto text-indigo-100 font-semibold leading-tight mb-0">
@@ -371,18 +374,18 @@
             <!-- Testimonials Ends Here-->            
 
             <!-- About Us Starts Here -->
-            <section class="py-12 px-12 lg:py-24 lg:px-24 lg:h-screen">
-                <h1 class="mb-16 font-extrabold text-5xl lg:text-6xl text-center text-gray-900 tracking-tighter">About Us</h1>
+            <section id="about" class="py-12 px-12 lg:py-24 lg:px-24 lg:h-full">
+                <h1 class="mb-10 lg:mb-16 font-extrabold text-4xl md:text-5xl text-center text-gray-900 tracking-tighter">About Us</h1>
 
-                <div class="flex flex-wrap">
-                    <div class="lg:w-1/2 px-2">
-                        <h2 class="text-3xl md:text-5xl font-semibold tracking-tighter">
+                <div class="lg:flex lg:flex-wrap lg:pb-16">
+                    <div class="lg:w-1/2 px-2 hidden lg:block">
+                        <h2 class="text-3xl md:text-5xl font-semibold tracking-tighter wavy-line text-gray-900">
                             It’s kind of fun to do the impossible.
                         </h2>
                     </div>
                     <div class="lg:w-1/2 px-2 mt-4 text-xl text-justify tracking-tight">
                         <p>
-                            Dorema spire was birthed out of the desire to make the web accessible to people in this fast paced world As a the world was forced to live online. Our team of expert team of designers & development of over 5 years of experience. We offer a package that would keep your customers engaged & well satisfied. Even as you grow your revenue 
+                            Dorema spire was birthed out of the desire to make the web accessible to people in this fast paced world As a the world was forced to live online. Our team of expert team of designers & development of over 5 years of experience. We offer a package that would keep your customers engaged & well satisfied. Even as you grow your revenue. A digital marketing team dedicated to helping your business grow
                         </p>
                     </div>
                 </div>
@@ -390,9 +393,10 @@
             <!-- About Us Ends Here -->
 
             <!-- Meet Nancy Starts Here-->
-            <section class="md:border-double md:border-4 md:border-silk">
-                <div class="lg:flex mx-auto">
-                    <div class="flex items-center justify-center lg:justify-end lg:px-10 lg:w-2/5 bg-alicia md:border-double md:border-4 md:border-silk">
+            <!-- todo: picture card animation at smaller breakpoint -->
+            <section class="md:border-double md:border-4 md:border-silk hidden lg:block ">
+                <div class="lg:flex lg:flex-wrap mx-auto">
+                    <div class="lg:w-2/5 flex items-center lg:px-10 bg-alicia">
                         <div class="max-w-sm mx-auto">
                             <img class="w-full h-auto object-cover object-center rounded-2xl" src="https://lh3.googleusercontent.com/aRoFGkw_xglGDUk5U-OQRjOlKsFL3DU-wjoRJnCIh137s_nYv-Lm_TFM6ab1WyCNPJM50-4h-YU60vms7w0qNGOrXuN8rGPwHi2Z89oIZmPVwe1qk5kwnNoU04cTpx2JagkdOi4tKw=w2400" alt="">
                         </div>
@@ -402,7 +406,11 @@
                         <h1 class="font-extrabold text-3xl md:text-4xl">Meet Nancy</h1>
 
                         <div class="mt-3 leading-7">
-                            Hi there! I'm Jordanne, and I'm the founder of Dorema Spire. My digital and integrated marketing experience has included a diverse portfolio of projects ranging from finance experts, to apparel and fashion, health and wellness, and consumer electronics. I've executed successful digital and traditional marketing campaigns, increased brand awareness, constructed impactful messaging, and secured hundreds of top-tier media coverage opportunities. I love making an impact with my clients and sharing their story with the world!
+                            Hi there! I'm Nancy and I'm the founder of Dorema Spire. 
+                            
+                            <p>
+                                My digital and integrated marketing experience has included a diverse portfolio of projects ranging from finance experts, to apparel and fashion, health and wellness, and consumer electronics. I've executed successful digital and traditional marketing campaigns, increased brand awareness, constructed impactful messaging, and secured hundreds of top-tier media coverage opportunities. I love making an impact with my clients and sharing their story with the world!
+                            </p>
                         </div>
 
                         <div class="mt-3">
@@ -424,7 +432,7 @@
             
 
             <!-- Engage & Experience Starts Here -->
-            <section class="min-h-full bg-silk py-20">
+            <section id="contact" class="min-h-full bg-silk py-20">
                 <h1 class="font-extrabold text-3xl md:text-5xl text-center">Engage & Experience</h1>
 
                 <div class="container px-8 py-6">
@@ -452,21 +460,27 @@
                         <div class="flex flex-wrap -m-2">
                             <div class="p-2 w-1/2">
                                 <div class="relative">
-                                    <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                                    <label for="name" class="leading-7 text-sm text-gray-600">
+                                        Name
+                                    </label>
                                     <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                                 </div>
                             </div>
 
                             <div class="p-2 w-1/2">
                                 <div class="relative">
-                                    <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                                    <label for="email" class="leading-7 text-sm text-gray-600">
+                                        Email
+                                    </label>
                                     <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                                 </div>
                             </div>
 
                             <div class="p-2 w-full">
                                 <div class="relative">
-                                    <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                                    <label for="message" class="leading-7 text-sm text-gray-600">
+                                        Message
+                                    </label>
                                     <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                                 </div>
                             </div>
@@ -475,30 +489,30 @@
                                 <button class="flex mx-auto text-white bg-gray-900 border-0 py-2 px-8 focus:outline-none hover:bg-ming rounded text-lg">Submit</button>
                             </div>
 
-                            <div class="p-2 w-full pt-8 mt-8 border-t text-lg border-gray-200 text-center">
-                                <a class="text-indigo-500">info@doremaspire.com</a>
+                            <!-- Other information -->
+                            <div class="p-2 w-full mt-3 pt-8 border-t text-lg border-gray-500 text-center font-semibold">
+                                <p class="my-2">Say Hi:</p>
+                                <a href="#" class="text-indigo-500">info@doremaspire.com</a>
 
-                                <p class="leading-normal my-2">(516) 900-7024</p>
+                                <p class="my-2">Call Us On:</p>
+                                <p class="my-2 leading-normal text-blue-500">+1 (516) 900-7024</p>
+
+                                <p class="my-2">Follow Us On Social Media:</p>
                                 <span class="inline-flex my-2">
-                                    <a class="text-gray-700">
+                                    <a class="text-blue-500">
                                         <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                                         <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                                         </svg>
                                     </a>
-                                    <a class="ml-4 text-gray-700">
+                                    <a class="ml-4 text-blue-500">
                                         <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                                         <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
                                         </svg>
                                     </a>
-                                    <a class="ml-4 text-gray-700">
+                                    <a class="ml-4 text-blue-500">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                                         <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                                         <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                                        </svg>
-                                    </a>
-                                    <a class="ml-4 text-gray-700">
-                                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
                                         </svg>
                                     </a>
                                 </span>
@@ -512,7 +526,7 @@
 
         <!-- Footer Starts Here -->
         <footer class="flex flex-col justify-between items-center px-6 py-2 bg-gray-900 sm:flex-row">
-            <a href="/" class="text-xl font-bold text-white hover:text-gray-700 dark:hover:text-gray-300">Dorema Spire Logo</a>
+            <a href="#" class="text-xl font-bold text-white hover:text-gray-700 dark:hover:text-gray-300">Dorema Spire Logo</a>
             
             <p class="py-2 text-gray-200 dark:text-white sm:py-0">© 2021, Dorema Spire LLC</p>
         </footer>        
