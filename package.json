@@ -4,9 +4,8 @@
   "description": "portfolio",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon",
-    "build": "postcss styles/tailwind.css -o public/build/tailwind.css",
-    "watch": "postcss styles/tailwind.css -o public/build/tailwind.css --watch"
+    "start": "node app.js",
+    "build": "postcss styles/tailwind.css -o public/build/tailwind.css"
   },
   "repository": {
     "type": "git",
@@ -24,7 +23,7 @@
     "autoprefixer": "^10.2.1",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "postcss": "^8.2.6",
+    "postcss": "^8.0.0",
     "tailwindcss": "^2.0.3"
   },
   "peerDependencies": {
