@@ -1,7 +1,12 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: [],
+  purge: {
+    enabled: true,
+    content: [
+        './**/*.ejs'
+    ]
+  },
 
   darkMode: false, // or 'media' or 'class'
 
@@ -18,7 +23,8 @@ module.exports = {
         'middle-green': '#83C5BE',
         'middle-green-lite': '#D8EFEF',
         'ming': '#006D77',
-        'borange': '#964D37'
+        'navy': '#18212F',
+
       },
 
       spacing: {
