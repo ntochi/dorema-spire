@@ -1,6 +1,7 @@
 const express = require('express');
-const app = express();
 const port = process.env.PORT || process.env.IP || 3000;
+
+const app = express();
 
 
 app.use(express.static(__dirname + "/public"));
@@ -14,4 +15,4 @@ app.get("/about", (req, res) => {
     res.render("about")
 });
 
-app.listen(port, () => console.log("Dorema Spire Has Started!"));P
+app.listen(port, () => console.log("Dorema Spire Has Started!"));

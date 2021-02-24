@@ -2,28 +2,28 @@
 
     <main>
         <!-- Header Starts Here -->
-        <header>
-            <div class="lg:h-screen w-full bg-cover bg-center" style="background-image: url(https://images.unsplash.com/photo-1585399000684-d2f72660f092?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80);">
-                <div class="flex items-center justify-start h-full px-20 py-16 md:py-24 lg:py-0 bg-gray-800 bg-opacity-50">
-                    <div>
-                        <h1 class="my-2 text-white text-shadow-xl font-medium font-mono tracking-tighter capitalize text-center text-2xl md:text-5xl md:lowercase md:text-left lg:text-8xl lg:animate-pulse"> 
-                            <span>be where</span> 
-                            <br>
-                            <span>the world is going.</span>  
-                        </h1> 
+        <header class="bg-gray-900 pattern">
+            <div class="lg:h-screen flex items-center justify-start px-20 py-16 md:py-24 lg:py-0 bg-gray-800 bg-opacity-50">
+                <div>
+                    <h1 class="my-2 text-white text-shadow-xl font-medium font-mono tracking-tighter text-center md:text-left capitalize md:lowercase text-3xl md:text-6xl lg:text-8xl lg:animate-pulse">
+                        <span class="space-x-5">be where</span>
+                        <br>
+                        <span>the world is going.</span>
+                    </h1> 
 
-                        <button class="px-2 py-2 my-3 ml-6 text-xxs md:m-0 md:text-lg lg:px-8 lg:py-3 lg:m-2 lg:text-xl text-white bg-transparent border border-solid border-white hover:bg-gray-900 hover:text-white font-bold capitalize rounded outline-none focus:outline-none" type="button">
-                            <a href="#services">build a website & grow your business</a>
-                        </button>                        
-                    </div>
+                    <button class="px-2 py-2 my-3 ml-6 text-xxs md:m-0 md:text-lg lg:px-8 lg:py-3 lg:my-7 lg:text-xl text-white bg-transparent border border-solid border-white hover:bg-gray-900 hover:text-white font-bold capitalize rounded outline-none focus:outline-none" type="button">
+                        <a href="#services">build a website & grow your business</a>
+                    </button>                        
                 </div>
             </div>
+
         </header>
         <!-- Header Ends Here -->
 
+
         <!-- What We Offer Starts Here -->
-        <section id="services" class="bg-white">
-            <h1 class="pt-10 font-extrabold text-3xl md:text-5xl text-center text-gray-800 tracking-tighter">What We Offer</h1>
+        <section id="services" class="bg-white py-20">
+            <h1 class="pt-6 font-extrabold text-3xl md:text-5xl text-center text-gray-800 tracking-tighter">What We Offer</h1>
 
             <div class="container mx-auto px-8 py-8 md:px-16 md:py-12">
                 <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-lg">
@@ -104,7 +104,7 @@
         <!-- What We Offer Ends Here -->
 
         <!-- Work Starts Here-->
-        <section id="work" class="py-8 px-4 text-justify bg-gray-300">
+        <section id="work" class="py-8 px-4 text-justify bg-alicia">
             <h1 class="py-6 md:py-16 font-extrabold text-4xl md:text-5xl text-center text-gray-900 tracking-tighter">Recent Work</h1>
 
             <!-- * AATC -->
@@ -225,7 +225,7 @@
             <div class="relative w-full py-12 lg:py-24 lg:w-1/2 flex flex-col item-center justify-center bg-ming">
 
                 <!-- What Our Clients Are Saying -->
-                <div class="text-4xl md:text-6xl md:p-6 mx-auto text-indigo-100 font-semibold leading-tight mb-0">
+                <div class="text-4xl md:text-6xl md:p-6 mx-auto text-white font-semibold leading-tight mb-0">
                     <span class="md:block">What Our</span>
                     <span class="md-block">Clients Are</span>
                     <span class="block">Saying!</span>
@@ -245,7 +245,7 @@
                 </div>
             </div>
 
-            <div class="bg-gray-100 lg:w-1/2 py-16">
+            <div class="bg-white lg:w-1/2 py-16">
                 <div class="flex flex-col h-full relative">
                     <!-- Opening Quotes -->
                     <div class="absolute top-0 left-0 mt-3 ml-4 md:mt-5 md:ml-12">
@@ -277,17 +277,17 @@
                     <div class="flex justify-center items-center">
                         <button 
                             @click.prevent="testimonialActive = 1" 
-                            class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline inline-block  bg-indigo-600` rounded-full mx-2"
+                            class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline inline-block rounded-full mx-2"
                             :class="{'h-12 w-12 opacity-25 bg-indigo-300 text-gray-900': testimonialActive != 1, 'h-16 w-16 opacity-100 bg-middle-green text-white': testimonialActive == 1 }"	
                         >JO</button>
                         <button 
                             @click.prevent="testimonialActive = 2" 
-                            class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-16 w-16 inline-block bg-indigo-600 rounded-full mx-2"
+                            class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-16 w-16 inline-block rounded-full mx-2"
                             :class="{'h-12 w-12 opacity-25 bg-indigo-300 text-gray-900': testimonialActive != 2, 'h-16 w-16 opacity-100 bg-middle-green text-white': testimonialActive == 2 }"	
                         >AE</button>
                         <button 
                             @click.prevent="testimonialActive = 3" 
-                            class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-indigo-600 rounded-full mx-2"
+                            class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block rounded-full mx-2"
                             :class="{'h-12 w-12 opacity-25 bg-indigo-300 text-gray-900': testimonialActive != 3, 'h-16 w-16 opacity-100 bg-middle-green text-white': testimonialActive == 3 }"
                         >KG</button>
                     </div>
@@ -355,7 +355,7 @@
 
             <div class="px-8 py-6">
                 <div class="max-w-2xl mx-auto text-md text-center">
-                    <p class="text-2xl">
+                    <p class="text-xl md:text-2xl">
                         We're excited to help! Let's turn your big ideas into  a reality and create something your customers will love.
                     </p>
                 </div>
@@ -369,13 +369,14 @@
                 <div class="flex flex-col text-center w-full mb-12">
                     <h1 class="font-extrabold text-3xl md:text-5xl">Contact Us</h1>
 
-                    <p class="lg:w-2/3 mx-auto leading-relaxed text-xl">
+                    <p class="lg:w-2/3 mx-auto text-xl mt-4">
                         Have questions? Please fill the contact form below and we'll reply you shortly.
                     </p>
                 </div>
 
                 <div class="lg:w-1/2 md:w-2/3 mx-auto">
                     <div class="flex flex-wrap -m-2">
+                        <!-- Form starts here -->
                         <div class="p-2 w-1/2">
                             <div class="relative">
                                 <label for="name" class="leading-7 text-sm text-gray-600">
@@ -406,14 +407,16 @@
                         <div class="p-2 w-full">
                             <button class="flex mx-auto text-white bg-gray-900 border-0 py-2 px-8 focus:outline-none hover:bg-ming rounded text-lg">Submit</button>
                         </div>
+                        <!-- Form ends here -->
+
 
                         <!-- Other information -->
                         <div class="p-2 w-full mt-3 pt-8 border-t text-lg border-gray-500 text-center font-semibold">
                             <p class="my-2">Say Hi:</p>
-                            <a href="#" class="text-gray-700">info@doremaspire.com</a>
+                            <a href="#" class="text-gray-700 hover:underline">info@doremaspire.com</a>
 
                             <p class="my-2">Call Us On:</p>
-                            <p class="my-2 leading-normal text-gray-700">+1 (516) 900-7024</p>
+                            <p class="my-2 leading-normal text-gray-700 hover:underline">+1 (516) 900-7024</p>
 
                             <p class="my-2">Follow Us On Social Media:</p>
                             <span class="inline-flex my-2">
