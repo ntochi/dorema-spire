@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ntochi/nancytochi.com.git"
+    "url": "git+https://github.com/ntochi/dorema-spire.git"
   },
   "author": "Nancy Tochi O",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ntochi/nancytochi.com/issues"
+    "url": "https://github.com/ntochi/dorema-spire/issues"
   },
   "homepage": "https://doremaspire.com",
   "dependencies": {
